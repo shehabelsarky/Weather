@@ -1,16 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
-MERGED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:navigation] E:\Android Projects\Weather App\Weather App\navigation\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
-MERGED from [:domain] E:\Android Projects\Weather App\Weather App\domain\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
-MERGED from [:data] E:\Android Projects\Weather App\Weather App\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
-MERGED from [:entities] E:\Android Projects\Weather App\Weather App\entities\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:navigation] E:\Android Projects\Weather Task\Weather\navigation\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
+MERGED from [:domain] E:\Android Projects\Weather Task\Weather\domain\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:data] E:\Android Projects\Weather Task\Weather\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:entities] E:\Android Projects\Weather Task\Weather\entities\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.databinding:databinding-adapters:4.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\ca12783421f905c586954e04faadbd7c\databinding-adapters-4.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\4cd418c1b36cacb3f66b753022ee7baf\databinding-runtime-4.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.xwray:groupie-kotlin-android-extensions:2.1.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\c238bd50b89ce98b3d8cbec58f2eecd2\jetified-groupie-kotlin-android-extensions-2.1.0\AndroidManifest.xml:2:1-11:12
@@ -93,69 +92,65 @@ MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\FUTURE\.gradle\cac
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\9c4c69e7cfca8022461ba8c9dd4eb376\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\762056a2602dcfbd4e6d3497ab86c93e\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.28] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\46ed580668f31fd8f06f08fe5029f75f\jetified-dagger-lint-aar-2.28\AndroidManifest.xml:16:1-18:12
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:4:5-37
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:6:5-76
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:6:5-76
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:6:22-73
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:6:22-73
 uses-permission#android.permission.INTERNET
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:8:5-79
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
 MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\f0e5c0e7269fd737e8ef11db2dc68a50\work-runtime-2.3.4\AndroidManifest.xml:26:5-79
 MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\f0e5c0e7269fd737e8ef11db2dc68a50\work-runtime-2.3.4\AndroidManifest.xml:26:5-79
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:10:5-80
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:10:22-77
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:11:5-81
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:11:5-81
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:11:22-78
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:11:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:12:5-79
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:12:5-79
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:12:22-76
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:12:22-76
 application
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:15:5-47:19
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-16:19
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-16:19
-MERGED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:19
-MERGED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:19
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-16:19
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-16:19
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:15:5-35:19
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-16:19
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-16:19
 MERGED from [com.google.android.material:material:1.3.0-alpha01] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\545d5b3a502e29cd958d337544842c67\material-1.3.0-alpha01\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha01] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\545d5b3a502e29cd958d337544842c67\material-1.3.0-alpha01\AndroidManifest.xml:22:5-20
 MERGED from [com.xwray:groupie:2.1.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\bc57a4ebe1eb4d672637327567b7ad7c\jetified-groupie-2.1.0\AndroidManifest.xml:11:5-12:19
@@ -187,57 +182,55 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FU
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\0255de6cb428351083d3d6e237991a13\core-1.3.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:19:9-41
 	tools:ignore
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:24:9-60
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:24:9-60
 	android:roundIcon
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:20:9-54
 	tools:targetApi
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:25:9-28
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:25:9-28
 	android:icon
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:22:9-40
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:22:9-40
 	android:usesCleartextTraffic
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:23:9-44
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:16:9-33
-activity#com.example.popularpersons.ui.activity.WeatherActivity
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:39:9-45:20
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:16:9-33
+activity#com.example.weather.ui.activity.WeatherActivity
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:39:19-88
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:27:19-81
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:41:13-44:29
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:29:13-32:29
 action#android.intent.action.MAIN
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:42:17-69
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:42:25-66
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:43:17-77
+ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:43:27-74
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:31:27-74
 uses-sdk
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:navigation] E:\Android Projects\Weather App\Weather App\navigation\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:navigation] E:\Android Projects\Weather App\Weather App\navigation\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:domain] E:\Android Projects\Weather App\Weather App\domain\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:domain] E:\Android Projects\Weather App\Weather App\domain\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:data] E:\Android Projects\Weather App\Weather App\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:data] E:\Android Projects\Weather App\Weather App\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:entities] E:\Android Projects\Weather App\Weather App\entities\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:entities] E:\Android Projects\Weather App\Weather App\entities\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:weather] E:\Android Projects\Weather Task\Weather\weather\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:navigation] E:\Android Projects\Weather Task\Weather\navigation\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:navigation] E:\Android Projects\Weather Task\Weather\navigation\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:domain] E:\Android Projects\Weather Task\Weather\domain\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:domain] E:\Android Projects\Weather Task\Weather\domain\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:data] E:\Android Projects\Weather Task\Weather\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:data] E:\Android Projects\Weather Task\Weather\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:entities] E:\Android Projects\Weather Task\Weather\entities\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:entities] E:\Android Projects\Weather Task\Weather\entities\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.databinding:databinding-adapters:4.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\ca12783421f905c586954e04faadbd7c\databinding-adapters-4.0.0\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-adapters:4.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\ca12783421f905c586954e04faadbd7c\databinding-adapters-4.0.0\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:4.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\4cd418c1b36cacb3f66b753022ee7baf\databinding-runtime-4.0.0\AndroidManifest.xml:22:5-44
@@ -400,28 +393,20 @@ MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\FUTURE\.gradle\caches\transf
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\9c4c69e7cfca8022461ba8c9dd4eb376\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\762056a2602dcfbd4e6d3497ab86c93e\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\762056a2602dcfbd4e6d3497ab86c93e\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml
-activity#com.example.popularpersons.ui.activity.MainActivity
-ADDED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-88
-	android:name
-		ADDED from [:popularpersons] E:\Android Projects\Weather App\Weather App\popularpersons\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:19-85
-activity#com.example.details.ui.activity.DetailsActivity
-ADDED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-84
-	android:name
-		ADDED from [:details] E:\Android Projects\Weather App\Weather App\details\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-81
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml
 activity#com.examples.core.base.activity.PermissionsActivity
-ADDED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-15:20
+ADDED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-15:20
 	android:name
-		ADDED from [:core] E:\Android Projects\Weather App\Weather App\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-85
+		ADDED from [:core] E:\Android Projects\Weather Task\Weather\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-85
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [androidx.work:work-runtime:2.3.4] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\f0e5c0e7269fd737e8ef11db2dc68a50\work-runtime-2.3.4\AndroidManifest.xml:25:5-68
 	android:name
@@ -659,4 +644,4 @@ ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FUTURE\.gradle\
 	android:name
 		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FUTURE\.gradle\caches\transforms-2\files-2.1\17c003706443d79deef85ab2f134a870\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from E:\Android Projects\Weather App\Weather App\app\src\main\AndroidManifest.xml:2:1-49:12 reason: dagger.lint has a targetSdkVersion < 4
+IMPLIED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:2:1-37:12 reason: dagger.lint has a targetSdkVersion < 4

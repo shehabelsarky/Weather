@@ -68,7 +68,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   public List<DataBinderMapper> collectDependencies() {
     ArrayList<DataBinderMapper> result = new ArrayList<DataBinderMapper>(2);
     result.add(new androidx.databinding.library.baseAdapters.DataBinderMapperImpl());
-    result.add(new com.example.popularpersons.DataBinderMapperImpl());
+    result.add(new com.example.weather.DataBinderMapperImpl());
     return result;
   }
 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\Weather App\\Weather App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "outputFile": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\589ba44e7eff1455039908984c64133f\\navigation-ui-2.3.0-beta01\\res\\values-pt-rBR\\values-pt-rBR.xml",

@@ -9,22 +9,15 @@ import androidx.hilt.lifecycle.ViewModelFactoryModules_ActivityModule_ProvideFac
 import androidx.hilt.lifecycle.ViewModelFactoryModules_FragmentModule_ProvideFactoryFactory;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
-import com.example.details.ui.activity.DetailsActivity;
-import com.example.details.ui.fragments.DetailsFragment;
-import com.example.details.ui.fragments.DetailsViewModel_AssistedFactory;
-import com.example.details.ui.fragments.DetailsViewModel_AssistedFactory_Factory;
-import com.example.popularpersons.ui.activity.MainActivity;
-import com.example.popularpersons.ui.activity.WeatherActivity;
-import com.example.popularpersons.ui.fragment.cities.CitiesFragment;
-import com.example.popularpersons.ui.fragment.home.HomeFragment;
-import com.example.popularpersons.ui.fragment.home.HomeViewModel_AssistedFactory;
-import com.example.popularpersons.ui.fragment.home.HomeViewModel_AssistedFactory_Factory;
-import com.example.popularpersons.ui.fragment.weather.WeatherFragment;
+import com.example.weather.ui.activity.WeatherActivity;
+import com.example.weather.ui.fragment.HomeViewModel_AssistedFactory;
+import com.example.weather.ui.fragment.HomeViewModel_AssistedFactory_Factory;
+import com.example.weather.ui.fragment.cities.CitiesFragment;
+import com.example.weather.ui.fragment.weather.WeatherFragment;
 import com.examples.core.base.view_model.BaseViewModel_AssistedFactory;
 import com.examples.core.base.view_model.BaseViewModel_AssistedFactory_Factory;
 import com.examples.data.di.DataBaseModule;
 import com.examples.data.di.DataBaseModule_ProvideRoomCitiesDatabaseFactory;
-import com.examples.data.di.DataBaseModule_ProvideRoomDatabaseFactory;
 import com.examples.data.di.NetworkModule;
 import com.examples.data.di.NetworkModule_LoggingInterceptorFactory;
 import com.examples.data.di.NetworkModule_ProvideCloudRepositoryFactory;
@@ -38,16 +31,9 @@ import com.examples.data.repository.AppRepoImp;
 import com.examples.data.restful.ApiService;
 import com.examples.data.source.cloud.BaseCloudRepository;
 import com.examples.data.source.db.AppCitiesDatabase;
-import com.examples.data.source.db.AppDatabase;
 import com.examples.data.source.local.MockJson;
 import com.examples.domain.mappers.cities.CitiesMapper;
-import com.examples.domain.mappers.popular_persons.PopularPersonsMapper;
 import com.examples.domain.mappers.weather.WeatherMapper;
-import com.examples.domain.popular_persons.DropPopularPersonsUseCase;
-import com.examples.domain.popular_persons.InsertPopularPersonUseCase;
-import com.examples.domain.popular_persons.PopularPersonsRemoteUseCase;
-import com.examples.domain.popular_persons.SelectPopularPersonsUseCase;
-import com.examples.domain.search_popular_persons.SearchPopularPersonsRemoteUseCase;
 import com.examples.domain.usecases.cities.CitiesUseCase;
 import com.examples.domain.usecases.cities.InsertCityUseCase;
 import com.examples.domain.usecases.cities.SelectCitiesUseCase;
@@ -99,8 +85,6 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
   private volatile Object retrofit = new MemoizedSentinel();
 
   private volatile Object apiService = new MemoizedSentinel();
-
-  private volatile Object appDatabase = new MemoizedSentinel();
 
   private volatile Object appCitiesDatabase = new MemoizedSentinel();
 
@@ -202,20 +186,6 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
     return NetworkModule_ProvideCloudRepositoryFactory.provideCloudRepository(getApiService());
   }
 
-  private AppDatabase getAppDatabase() {
-    Object local = appDatabase;
-    if (local instanceof MemoizedSentinel) {
-      synchronized (local) {
-        local = appDatabase;
-        if (local instanceof MemoizedSentinel) {
-          local = DataBaseModule_ProvideRoomDatabaseFactory.provideRoomDatabase(dataBaseModule, ApplicationContextModule_ProvideApplicationFactory.provideApplication(applicationContextModule));
-          appDatabase = DoubleCheck.reentrantCheck(appDatabase, local);
-        }
-      }
-    }
-    return (AppDatabase) local;
-  }
-
   private AppCitiesDatabase getAppCitiesDatabase() {
     Object local = appCitiesDatabase;
     if (local instanceof MemoizedSentinel) {
@@ -231,7 +201,7 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
   }
 
   private AppRepoImp getAppRepoImp() {
-    return new AppRepoImp(getBaseCloudRepository(), getAppDatabase(), getAppCitiesDatabase(), new MockJson());
+    return new AppRepoImp(getBaseCloudRepository(), getAppCitiesDatabase(), new MockJson());
   }
 
   @Override
@@ -322,18 +292,6 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
 
       private volatile Provider<BaseViewModel_AssistedFactory> baseViewModel_AssistedFactoryProvider;
 
-      private volatile Provider<DetailsViewModel_AssistedFactory> detailsViewModel_AssistedFactoryProvider;
-
-      private volatile Provider<PopularPersonsRemoteUseCase> popularPersonsRemoteUseCaseProvider;
-
-      private volatile Provider<SearchPopularPersonsRemoteUseCase> searchPopularPersonsRemoteUseCaseProvider;
-
-      private volatile Provider<InsertPopularPersonUseCase> insertPopularPersonUseCaseProvider;
-
-      private volatile Provider<SelectPopularPersonsUseCase> selectPopularPersonsUseCaseProvider;
-
-      private volatile Provider<DropPopularPersonsUseCase> dropPopularPersonsUseCaseProvider;
-
       private volatile Provider<CitiesUseCase> citiesUseCaseProvider;
 
       private volatile Provider<WeatherUseCase> weatherUseCaseProvider;
@@ -357,84 +315,8 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
         return (Provider<BaseViewModel_AssistedFactory>) local;
       }
 
-      private Provider<DetailsViewModel_AssistedFactory> getDetailsViewModel_AssistedFactoryProvider(
-          ) {
-        Object local = detailsViewModel_AssistedFactoryProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(1);
-          detailsViewModel_AssistedFactoryProvider = (Provider<DetailsViewModel_AssistedFactory>) local;
-        }
-        return (Provider<DetailsViewModel_AssistedFactory>) local;
-      }
-
       private CloudErrorMapper getCloudErrorMapper() {
         return new CloudErrorMapper(DaggerApp_HiltComponents_ApplicationC.this.getGson());
-      }
-
-      private PopularPersonsRemoteUseCase getPopularPersonsRemoteUseCase() {
-        return new PopularPersonsRemoteUseCase(getCloudErrorMapper(), DaggerApp_HiltComponents_ApplicationC.this.getAppRepoImp(), new PopularPersonsMapper());
-      }
-
-      private Provider<PopularPersonsRemoteUseCase> getPopularPersonsRemoteUseCaseProvider() {
-        Object local = popularPersonsRemoteUseCaseProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(3);
-          popularPersonsRemoteUseCaseProvider = (Provider<PopularPersonsRemoteUseCase>) local;
-        }
-        return (Provider<PopularPersonsRemoteUseCase>) local;
-      }
-
-      private SearchPopularPersonsRemoteUseCase getSearchPopularPersonsRemoteUseCase() {
-        return new SearchPopularPersonsRemoteUseCase(getCloudErrorMapper(), DaggerApp_HiltComponents_ApplicationC.this.getAppRepoImp(), new PopularPersonsMapper());
-      }
-
-      private Provider<SearchPopularPersonsRemoteUseCase> getSearchPopularPersonsRemoteUseCaseProvider(
-          ) {
-        Object local = searchPopularPersonsRemoteUseCaseProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(4);
-          searchPopularPersonsRemoteUseCaseProvider = (Provider<SearchPopularPersonsRemoteUseCase>) local;
-        }
-        return (Provider<SearchPopularPersonsRemoteUseCase>) local;
-      }
-
-      private InsertPopularPersonUseCase getInsertPopularPersonUseCase() {
-        return new InsertPopularPersonUseCase(DaggerApp_HiltComponents_ApplicationC.this.getAppRepoImp());
-      }
-
-      private Provider<InsertPopularPersonUseCase> getInsertPopularPersonUseCaseProvider() {
-        Object local = insertPopularPersonUseCaseProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(5);
-          insertPopularPersonUseCaseProvider = (Provider<InsertPopularPersonUseCase>) local;
-        }
-        return (Provider<InsertPopularPersonUseCase>) local;
-      }
-
-      private SelectPopularPersonsUseCase getSelectPopularPersonsUseCase() {
-        return new SelectPopularPersonsUseCase(DaggerApp_HiltComponents_ApplicationC.this.getAppRepoImp());
-      }
-
-      private Provider<SelectPopularPersonsUseCase> getSelectPopularPersonsUseCaseProvider() {
-        Object local = selectPopularPersonsUseCaseProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(6);
-          selectPopularPersonsUseCaseProvider = (Provider<SelectPopularPersonsUseCase>) local;
-        }
-        return (Provider<SelectPopularPersonsUseCase>) local;
-      }
-
-      private DropPopularPersonsUseCase getDropPopularPersonsUseCase() {
-        return new DropPopularPersonsUseCase(DaggerApp_HiltComponents_ApplicationC.this.getAppRepoImp());
-      }
-
-      private Provider<DropPopularPersonsUseCase> getDropPopularPersonsUseCaseProvider() {
-        Object local = dropPopularPersonsUseCaseProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(7);
-          dropPopularPersonsUseCaseProvider = (Provider<DropPopularPersonsUseCase>) local;
-        }
-        return (Provider<DropPopularPersonsUseCase>) local;
       }
 
       private CitiesUseCase getCitiesUseCase() {
@@ -444,7 +326,7 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
       private Provider<CitiesUseCase> getCitiesUseCaseProvider() {
         Object local = citiesUseCaseProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(8);
+          local = new SwitchingProvider<>(2);
           citiesUseCaseProvider = (Provider<CitiesUseCase>) local;
         }
         return (Provider<CitiesUseCase>) local;
@@ -457,7 +339,7 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
       private Provider<WeatherUseCase> getWeatherUseCaseProvider() {
         Object local = weatherUseCaseProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(9);
+          local = new SwitchingProvider<>(3);
           weatherUseCaseProvider = (Provider<WeatherUseCase>) local;
         }
         return (Provider<WeatherUseCase>) local;
@@ -470,7 +352,7 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
       private Provider<InsertCityUseCase> getInsertCityUseCaseProvider() {
         Object local = insertCityUseCaseProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(10);
+          local = new SwitchingProvider<>(4);
           insertCityUseCaseProvider = (Provider<InsertCityUseCase>) local;
         }
         return (Provider<InsertCityUseCase>) local;
@@ -483,20 +365,20 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
       private Provider<SelectCitiesUseCase> getSelectCitiesUseCaseProvider() {
         Object local = selectCitiesUseCaseProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(11);
+          local = new SwitchingProvider<>(5);
           selectCitiesUseCaseProvider = (Provider<SelectCitiesUseCase>) local;
         }
         return (Provider<SelectCitiesUseCase>) local;
       }
 
       private HomeViewModel_AssistedFactory getHomeViewModel_AssistedFactory() {
-        return HomeViewModel_AssistedFactory_Factory.newInstance(getPopularPersonsRemoteUseCaseProvider(), getSearchPopularPersonsRemoteUseCaseProvider(), getInsertPopularPersonUseCaseProvider(), getSelectPopularPersonsUseCaseProvider(), getDropPopularPersonsUseCaseProvider(), getCitiesUseCaseProvider(), getWeatherUseCaseProvider(), getInsertCityUseCaseProvider(), getSelectCitiesUseCaseProvider());
+        return HomeViewModel_AssistedFactory_Factory.newInstance(getCitiesUseCaseProvider(), getWeatherUseCaseProvider(), getInsertCityUseCaseProvider(), getSelectCitiesUseCaseProvider());
       }
 
       private Provider<HomeViewModel_AssistedFactory> getHomeViewModel_AssistedFactoryProvider() {
         Object local = homeViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(2);
+          local = new SwitchingProvider<>(1);
           homeViewModel_AssistedFactoryProvider = (Provider<HomeViewModel_AssistedFactory>) local;
         }
         return (Provider<HomeViewModel_AssistedFactory>) local;
@@ -504,19 +386,11 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
 
       private Map<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>> getMapOfStringAndProviderOfViewModelAssistedFactoryOf(
           ) {
-        return MapBuilder.<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>>newMapBuilder(3).put("com.examples.core.base.view_model.BaseViewModel", (Provider) getBaseViewModel_AssistedFactoryProvider()).put("com.example.details.ui.fragments.DetailsViewModel", (Provider) getDetailsViewModel_AssistedFactoryProvider()).put("com.example.popularpersons.ui.fragment.home.HomeViewModel", (Provider) getHomeViewModel_AssistedFactoryProvider()).build();
+        return MapBuilder.<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>>newMapBuilder(2).put("com.examples.core.base.view_model.BaseViewModel", (Provider) getBaseViewModel_AssistedFactoryProvider()).put("com.example.weather.ui.fragment.HomeViewModel", (Provider) getHomeViewModel_AssistedFactoryProvider()).build();
       }
 
       private ViewModelProvider.Factory getProvideFactory() {
         return ViewModelFactoryModules_ActivityModule_ProvideFactoryFactory.provideFactory(activity, ApplicationContextModule_ProvideApplicationFactory.provideApplication(DaggerApp_HiltComponents_ApplicationC.this.applicationContextModule), getMapOfStringAndProviderOfViewModelAssistedFactoryOf());
-      }
-
-      @Override
-      public void injectDetailsActivity(DetailsActivity arg0) {
-      }
-
-      @Override
-      public void injectMainActivity(MainActivity arg0) {
       }
 
       @Override
@@ -566,15 +440,7 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
         }
 
         @Override
-        public void injectDetailsFragment(DetailsFragment arg0) {
-        }
-
-        @Override
         public void injectCitiesFragment(CitiesFragment arg0) {
-        }
-
-        @Override
-        public void injectHomeFragment(HomeFragment arg0) {
         }
 
         @Override
@@ -650,37 +516,19 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
             case 0: // com.examples.core.base.view_model.BaseViewModel_AssistedFactory 
             return (T) BaseViewModel_AssistedFactory_Factory.newInstance();
 
-            case 1: // com.example.details.ui.fragments.DetailsViewModel_AssistedFactory 
-            return (T) DetailsViewModel_AssistedFactory_Factory.newInstance();
-
-            case 2: // com.example.popularpersons.ui.fragment.home.HomeViewModel_AssistedFactory 
+            case 1: // com.example.weather.ui.fragment.HomeViewModel_AssistedFactory 
             return (T) ActivityCImpl.this.getHomeViewModel_AssistedFactory();
 
-            case 3: // com.examples.domain.popular_persons.PopularPersonsRemoteUseCase 
-            return (T) ActivityCImpl.this.getPopularPersonsRemoteUseCase();
-
-            case 4: // com.examples.domain.search_popular_persons.SearchPopularPersonsRemoteUseCase 
-            return (T) ActivityCImpl.this.getSearchPopularPersonsRemoteUseCase();
-
-            case 5: // com.examples.domain.popular_persons.InsertPopularPersonUseCase 
-            return (T) ActivityCImpl.this.getInsertPopularPersonUseCase();
-
-            case 6: // com.examples.domain.popular_persons.SelectPopularPersonsUseCase 
-            return (T) ActivityCImpl.this.getSelectPopularPersonsUseCase();
-
-            case 7: // com.examples.domain.popular_persons.DropPopularPersonsUseCase 
-            return (T) ActivityCImpl.this.getDropPopularPersonsUseCase();
-
-            case 8: // com.examples.domain.usecases.cities.CitiesUseCase 
+            case 2: // com.examples.domain.usecases.cities.CitiesUseCase 
             return (T) ActivityCImpl.this.getCitiesUseCase();
 
-            case 9: // com.examples.domain.usecases.weather.WeatherUseCase 
+            case 3: // com.examples.domain.usecases.weather.WeatherUseCase 
             return (T) ActivityCImpl.this.getWeatherUseCase();
 
-            case 10: // com.examples.domain.usecases.cities.InsertCityUseCase 
+            case 4: // com.examples.domain.usecases.cities.InsertCityUseCase 
             return (T) ActivityCImpl.this.getInsertCityUseCase();
 
-            case 11: // com.examples.domain.usecases.cities.SelectCitiesUseCase 
+            case 5: // com.examples.domain.usecases.cities.SelectCitiesUseCase 
             return (T) ActivityCImpl.this.getSelectCitiesUseCase();
 
             default: throw new AssertionError(id);

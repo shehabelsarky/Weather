@@ -7,6 +7,9 @@ import com.appizona.yehiahd.fastsave.FastSave
 import com.examples.core.utils.NetworkingUtils
 import dagger.hilt.android.HiltAndroidApp
 
+/**
+ * Created by Shehab Elsarky
+ */
 @HiltAndroidApp
 class App : Application() {
 

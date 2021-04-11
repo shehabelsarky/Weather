@@ -31,32 +31,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-
-        <!--
-        <activity android:name="com.example.popularpersons.ui.activity.SplashActivity">
-            <meta-data
-                android:name="quadrant"
-                android:value="ignore" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        -->
-
-        <activity android:name="com.example.popularpersons.ui.activity.WeatherActivity" >
+        <activity android:name="com.example.weather.ui.activity.WeatherActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.popularpersons.ui.activity.MainActivity" />
-        <activity android:name="com.example.details.ui.activity.DetailsActivity" />
         <activity android:name="com.examples.core.base.activity.PermissionsActivity" >
         </activity>
 

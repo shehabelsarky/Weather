@@ -3,15 +3,10 @@ package com.architecture.clean.core;
 import androidx.hilt.lifecycle.ViewModelFactoryModules;
 import com.architecture.clean.di.module.AppModule;
 import com.architecture.clean.di.module.WeatherActivityModule;
-import com.example.details.ui.activity.DetailsActivity_GeneratedInjector;
-import com.example.details.ui.fragments.DetailsFragment_GeneratedInjector;
-import com.example.details.ui.fragments.DetailsViewModel_HiltModule;
-import com.example.popularpersons.ui.activity.MainActivity_GeneratedInjector;
-import com.example.popularpersons.ui.activity.WeatherActivity_GeneratedInjector;
-import com.example.popularpersons.ui.fragment.cities.CitiesFragment_GeneratedInjector;
-import com.example.popularpersons.ui.fragment.home.HomeFragment_GeneratedInjector;
-import com.example.popularpersons.ui.fragment.home.HomeViewModel_HiltModule;
-import com.example.popularpersons.ui.fragment.weather.WeatherFragment_GeneratedInjector;
+import com.example.weather.ui.activity.WeatherActivity_GeneratedInjector;
+import com.example.weather.ui.fragment.HomeViewModel_HiltModule;
+import com.example.weather.ui.fragment.cities.CitiesFragment_GeneratedInjector;
+import com.example.weather.ui.fragment.weather.WeatherFragment_GeneratedInjector;
 import com.examples.core.base.view_model.BaseViewModel_HiltModule;
 import com.examples.data.di.DataBaseModule;
 import com.examples.data.di.NetworkModule;
@@ -126,9 +121,7 @@ public final class App_HiltComponents {
       }
   )
   @ActivityScoped
-  public abstract static class ActivityC implements DetailsActivity_GeneratedInjector,
-      MainActivity_GeneratedInjector,
-      WeatherActivity_GeneratedInjector,
+  public abstract static class ActivityC implements WeatherActivity_GeneratedInjector,
       ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       FragmentComponentManager.FragmentComponentBuilderEntryPoint,
@@ -143,7 +136,6 @@ public final class App_HiltComponents {
       modules = {
           ActivityCBuilderModule.class,
           BaseViewModel_HiltModule.class,
-          DetailsViewModel_HiltModule.class,
           HomeViewModel_HiltModule.class
       }
   )
@@ -182,9 +174,7 @@ public final class App_HiltComponents {
       }
   )
   @FragmentScoped
-  public abstract static class FragmentC implements DetailsFragment_GeneratedInjector,
-      CitiesFragment_GeneratedInjector,
-      HomeFragment_GeneratedInjector,
+  public abstract static class FragmentC implements CitiesFragment_GeneratedInjector,
       WeatherFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,

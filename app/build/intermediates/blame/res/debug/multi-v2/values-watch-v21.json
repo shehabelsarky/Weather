@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\Weather App\\Weather App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\39954387899a0cdae250f27d83026306\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",

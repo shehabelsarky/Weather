@@ -9,6 +9,7 @@ import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Singleton
 
+
 @Module
 @InstallIn(ActivityComponent::class)
 object WeatherActivityModule {

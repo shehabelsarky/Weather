@@ -3,7 +3,6 @@ package com.examples.domain.usecases.cities
 import com.examples.data.repository.AppRepository
 import com.examples.domain.base.LocalUseCase
 import com.examples.entities.city.local.City
-import com.examples.entities.popular_person.local.PopularPersons
 import javax.inject.Inject
 
 /**

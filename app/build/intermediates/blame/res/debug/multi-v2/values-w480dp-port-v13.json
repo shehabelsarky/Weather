@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\Weather App\\Weather App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
+            "outputFile": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\545d5b3a502e29cd958d337544842c67\\material-1.3.0-alpha01\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",

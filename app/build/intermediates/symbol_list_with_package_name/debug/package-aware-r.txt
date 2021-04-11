@@ -1643,7 +1643,6 @@ id adjust_width
 id alertTitle
 id all
 id always
-id appBar
 id async
 id auto
 id barrier
@@ -1694,13 +1693,10 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id detailsFragment
-id details_nav_graph
 id dialog_button
 id dimensions
 id direct
 id disableHome
-id drawer_layout
 id dropdown_menu
 id edit_query
 id end
@@ -1727,7 +1723,6 @@ id ghost_view_holder
 id gone
 id group_divider
 id groups
-id header
 id hideable
 id home
 id homeAsUp
@@ -1737,14 +1732,12 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-id img_icon
 id incoming
 id info
 id input_layout_type
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivImage
 id ivRemove
 id labeled
 id largeLabel
@@ -1923,11 +1916,6 @@ id tvCityName
 id tvDescription
 id tvMaxTemp
 id tvMinTemp
-id tvName
-id tvOverview
-id tvPopularity
-id tvTile
-id tvTitle
 id tvWeatherMain
 id tvtitle
 id unchecked
@@ -2011,8 +1999,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_common
-layout activity_main
-layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2031,11 +2017,9 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_add_city
 layout fragment_cities
-layout fragment_details
 layout fragment_home
 layout fragment_weather
 layout item_city
-layout item_movie
 layout item_simple_spinner_dropdown_item
 layout item_weather
 layout list_layout
@@ -2105,7 +2089,6 @@ menu activity_main_drawer
 menu menu_detail
 mipmap ic_launcher
 mipmap ic_launcher_round
-navigation details_nav_graph
 navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

@@ -7,6 +7,9 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 
+/**
+ * Created by Shehab Elsarky
+ */
 @Module
 @InstallIn(ApplicationComponent::class)
 abstract class AppModule {

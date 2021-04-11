@@ -27,7 +27,6 @@ buildscript {
         /**
          * @link https://github.com/gaelmarhic/Quadrant naviagtion plugin
          */
-//        classpath "gradle.plugin.com.gaelmarhic:quadrant:$modules_navigation"
     }
 }
 

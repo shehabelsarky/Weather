@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\Weather App\\Weather App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\980b030db540422bf6900180b6ddfb98\\jetified-play-services-base-17.5.0\\res\\values-pl\\values.xml",

@@ -1,5 +1,4 @@
-include ':details'
-include ':popularpersons'
+include ':weather'
 include ':entities'
 include ':data'
 include ':navigation'

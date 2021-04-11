@@ -7,7 +7,7 @@ import com.examples.entities.city.local.City
 /**
  * Created by Shehab Elsarky
  */
-@Database(entities = [City::class], version = AppDatabase.VERSION, exportSchema = false)
+@Database(entities = [City::class], version = AppCitiesDatabase.VERSION, exportSchema = false)
 abstract class AppCitiesDatabase : RoomDatabase() {
     companion object {
         const val DB_NAME = "city.db"

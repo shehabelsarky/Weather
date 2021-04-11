@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\Weather App\\Weather App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "E:\\Android Projects\\Weather App\\Weather App\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "24,1,26,7,8,3,29,10,2,6,25,30,4,5,9",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1453,17,1560,289,338,114,1666,465,62,242,1507,1737,157,201,399",
-                        "endLines": "24,1,26,7,8,3,29,23,2,6,25,30,4,5,9",
-                        "endColumns": "52,43,43,47,59,41,69,13,50,45,51,59,42,39,64",
-                        "endOffsets": "1501,56,1599,332,393,151,1731,1447,108,283,1554,1792,195,236,459"
-                    },
-                    "to": {
-                        "startLines": "860,861,869,888,889,894,895,899,913,951,954,960,962,963,965",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "52527,52580,53330,55707,55755,56283,56325,56761,57735,64494,64703,65557,65670,65713,65824",
-                        "endLines": "860,861,869,888,889,894,895,912,913,951,954,960,962,963,965",
-                        "endColumns": "52,43,43,47,59,41,69,13,50,45,51,59,42,39,64",
-                        "endOffsets": "52575,52619,53369,55750,55810,56320,56390,57730,57781,64535,64750,65612,65708,65748,65884"
-                    }
-                },
                 {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\e0a0d30392de211ceff44cb9a3a80654\\lifecycle-runtime-2.3.0-alpha03\\res\\values\\values.xml",
                     "from": {
@@ -76,20 +57,20 @@
                     }
                 },
                 {
-                    "source": "E:\\Android Projects\\Weather App\\Weather App\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "E:\\Android Projects\\Weather Task\\Weather\\weather\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "1,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "17,65,108",
-                        "endColumns": "46,41,42",
-                        "endOffsets": "59,102,146"
+                        "startLines": "34",
+                        "startColumns": "4",
+                        "startOffsets": "1885",
+                        "endColumns": "41",
+                        "endOffsets": "1922"
                     },
                     "to": {
-                        "startLines": "436,498,703",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "25927,29932,43350",
-                        "endColumns": "46,41,42",
-                        "endOffsets": "25969,29969,43388"
+                        "startLines": "914",
+                        "startColumns": "4",
+                        "startOffsets": "57786",
+                        "endColumns": "41",
+                        "endOffsets": "57823"
                     }
                 },
                 {
@@ -112,20 +93,22 @@
                     }
                 },
                 {
-                    "source": "E:\\Android Projects\\Weather App\\Weather App\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "E:\\Android Projects\\Weather Task\\Weather\\core\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "6,4,2,3,8,7,5",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "242,157,57,105,327,280,204",
-                        "endColumns": "36,45,46,50,47,45,36",
-                        "endOffsets": "274,198,99,151,370,321,236"
+                        "startLines": "2,4,9,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,134,370,2874",
+                        "endLines": "2,4,9,59",
+                        "endColumns": "41,43,43,12",
+                        "endOffsets": "92,173,409,3358"
                     },
                     "to": {
-                        "startLines": "240,254,255,256,265,355,356",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "12639,13610,13656,13703,14425,20485,20531",
-                        "endColumns": "36,45,46,50,47,45,36",
-                        "endOffsets": "12671,13651,13698,13749,14468,20526,20563"
+                        "startLines": "239,241,352,2937",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "12597,12676,20320,193948",
+                        "endLines": "239,241,352,2944",
+                        "endColumns": "41,43,43,12",
+                        "endOffsets": "12634,12715,20359,194432"
                     }
                 },
                 {
@@ -148,6 +131,23 @@
                     }
                 },
                 {
+                    "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "1,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "17,65,108",
+                        "endColumns": "46,41,42",
+                        "endOffsets": "59,102,146"
+                    },
+                    "to": {
+                        "startLines": "436,498,703",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "25927,29932,43350",
+                        "endColumns": "46,41,42",
+                        "endOffsets": "25969,29969,43388"
+                    }
+                },
+                {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\03df20f516afe0b7a1c52169057c4547\\navigation-common-2.3.0-beta01\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,13,19,25,28",
@@ -164,6 +164,23 @@
                         "endLines": "6651,6657,6663,6666,6727",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "422690,422934,423181,423314,427029"
+                    }
+                },
+                {
+                    "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "6,4,2,3,8,7,5",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "242,157,57,105,327,280,204",
+                        "endColumns": "36,45,46,50,47,45,36",
+                        "endOffsets": "274,198,99,151,370,321,236"
+                    },
+                    "to": {
+                        "startLines": "240,254,255,256,265,355,356",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "12639,13610,13656,13703,14425,20485,20531",
+                        "endColumns": "36,45,46,50,47,45,36",
+                        "endOffsets": "12671,13651,13698,13749,14468,20526,20563"
                     }
                 },
                 {
@@ -387,25 +404,6 @@
                     }
                 },
                 {
-                    "source": "E:\\Android Projects\\Weather App\\Weather App\\core\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,4,9,52",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,134,370,2874",
-                        "endLines": "2,4,9,59",
-                        "endColumns": "41,43,43,12",
-                        "endOffsets": "92,173,409,3358"
-                    },
-                    "to": {
-                        "startLines": "239,241,352,2937",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "12597,12676,20320,193948",
-                        "endLines": "239,241,352,2944",
-                        "endColumns": "41,43,43,12",
-                        "endOffsets": "12634,12715,20359,194432"
-                    }
-                },
-                {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\589ba44e7eff1455039908984c64133f\\navigation-ui-2.3.0-beta01\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -459,23 +457,6 @@
                     }
                 },
                 {
-                    "source": "E:\\Android Projects\\Weather App\\Weather App\\popularpersons\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "34",
-                        "startColumns": "4",
-                        "startOffsets": "1885",
-                        "endColumns": "41",
-                        "endOffsets": "1922"
-                    },
-                    "to": {
-                        "startLines": "914",
-                        "startColumns": "4",
-                        "startOffsets": "57786",
-                        "endColumns": "41",
-                        "endOffsets": "57823"
-                    }
-                },
-                {
                     "source": "C:\\Users\\FUTURE\\.gradle\\caches\\transforms-2\\files-2.1\\0fb5156dea5a1553eb61c0b0ffdd8603\\drawerlayout-1.1.0-rc01\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -495,7 +476,26 @@
                     }
                 },
                 {
-                    "source": "E:\\Android Projects\\Weather App\\Weather App\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "24,1,26,7,8,3,29,10,2,6,25,30,4,5,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1453,17,1560,289,338,114,1666,465,62,242,1507,1737,157,201,399",
+                        "endLines": "24,1,26,7,8,3,29,23,2,6,25,30,4,5,9",
+                        "endColumns": "52,43,43,47,59,41,69,13,50,45,51,59,42,39,64",
+                        "endOffsets": "1501,56,1599,332,393,151,1731,1447,108,283,1554,1792,195,236,459"
+                    },
+                    "to": {
+                        "startLines": "860,861,869,888,889,894,895,899,913,951,954,960,962,963,965",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "52527,52580,53330,55707,55755,56283,56325,56761,57735,64494,64703,65557,65670,65713,65824",
+                        "endLines": "860,861,869,888,889,894,895,912,913,951,954,960,962,963,965",
+                        "endColumns": "52,43,43,47,59,41,69,13,50,45,51,59,42,39,64",
+                        "endOffsets": "52575,52619,53369,55750,55810,56320,56390,57730,57781,64535,64750,65612,65708,65748,65884"
+                    }
+                },
+                {
+                    "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,11,13",
                         "startColumns": "4,4,4",
