@@ -57,12 +57,18 @@ class CitiesFragment : BaseFragment<HomeViewModel>() {
 
     private fun initCitiesList() {
         citiesAdapter = CitiesAdapter({ cityDetails ->
-            navigateToWeatherFragment(cityDetails.cityName)
+            if (isNetworkConnected)
+                navigateToWeatherFragment(cityDetails.cityName)
+            else
+                requireContext().showToast("No internet connection")
         }, { city, position ->
-            coroutineScope.launch {
-                citiesList.removeAt(position)
-                citiesAdapter.notifyItemRemoved(position)
-            }
+            if (isNetworkConnected)
+                coroutineScope.launch {
+                    citiesList.removeAt(position)
+                    citiesAdapter.notifyItemRemoved(position)
+                }
+            else
+                requireContext().showToast("No internet connection")
         })
         rvList.adapter = citiesAdapter
     }
@@ -120,8 +126,15 @@ class CitiesFragment : BaseFragment<HomeViewModel>() {
     )
 
     private fun initLocationService() {
-        if (ActivityCompat.checkSelfPermission(requireContext(), permissionFineLocation) != permissionGranted
-            && ActivityCompat.checkSelfPermission(requireContext(), permissionCoarseLocation) != permissionGranted) {
+        if (ActivityCompat.checkSelfPermission(
+                requireContext(),
+                permissionFineLocation
+            ) != permissionGranted
+            && ActivityCompat.checkSelfPermission(
+                requireContext(),
+                permissionCoarseLocation
+            ) != permissionGranted
+        ) {
             return
         }
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
