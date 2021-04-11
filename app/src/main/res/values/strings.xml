@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Movies</string>
+    <string name="app_name">Weather</string>
     <string name="loading">Please wait...</string>
     <string name="health">Health</string>
     <string name="signin">Sign in</string>

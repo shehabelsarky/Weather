@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/citiesFragment"
         android:name="com.example.weather.ui.fragment.cities.CitiesFragment"
-        android:label="fragment_cities"
+        android:label="Cities"
         tools:layout="@layout/fragment_cities" >
         <action
             android:id="@+id/action_citiesFragment_to_weatherFragment"
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/weatherFragment"
         android:name="com.example.weather.ui.fragment.weather.WeatherFragment"
-        android:label="fragment_weather"
+        android:label="Weather"
         tools:layout="@layout/fragment_weather" >
 
 
