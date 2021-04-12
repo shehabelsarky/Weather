@@ -113,11 +113,16 @@ class CitiesFragment : BaseFragment<HomeViewModel>() {
 
     private fun initCitiesDropDownList(citiesList: List<City>) {
         val citiesDropDownAdapter = CitiesArrayAdapter(requireContext(), citiesList)
-        (input_layout_type.editText as? AutoCompleteTextView)?.run {
+        (input_layout_type)?.run {
             setAdapter(citiesDropDownAdapter)
             setOnItemClickListener { _, _, position, _ ->
+                input_layout_type.setText(citiesList[position].cityName)
+                input_layout_type.setSelection(citiesList[position].cityName.length)
                 navigateToWeatherFragment(citiesList[position].cityName)
             }
+        }
+        input_layout_type.setOnClickListener {
+            input_layout_type.requestFocus()
         }
     }
 

@@ -188,11 +188,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FU
 	tools:ignore
 		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:24:9-60
 	android:roundIcon
-		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:20:9-49
 	tools:targetApi
 		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:25:9-28
 	android:icon
-		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:18:9-44
 	android:allowBackup
 		ADDED from E:\Android Projects\Weather Task\Weather\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme

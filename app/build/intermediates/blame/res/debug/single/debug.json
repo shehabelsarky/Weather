@@ -76,6 +76,10 @@
         "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\drawable\\ic_favorite_red_24dp.xml"
     },
     {
+        "merged": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_weather.xml.flat",
+        "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\drawable\\ic_weather.xml"
+    },
+    {
         "merged": "E:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\font_font.xml.flat",
         "source": "E:\\Android Projects\\Weather Task\\Weather\\app\\src\\main\\res\\font\\font.xml"
     },

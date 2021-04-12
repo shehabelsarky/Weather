@@ -1,4 +1,4 @@
-#Sun Apr 11 03:39:07 EET 2021
+#Mon Apr 12 14:42:22 EET 2021
 path.38=classes_40.dex
 base.10=E\:\\Android Projects\\Weather Task\\Weather\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_15.dex
 path.37=classes_4.dex

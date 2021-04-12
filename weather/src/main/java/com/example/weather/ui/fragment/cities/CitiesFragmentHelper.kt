@@ -17,7 +17,8 @@ internal fun getCityFromLatLng(context: Context, lat: Double, lng: Double): Stri
         val geocoder = Geocoder(context, Locale.getDefault())
         val addresses: List<Address> = geocoder.getFromLocation(lat, lng, 1)
         if (addresses.isNotEmpty()) {
-            addresses[0].locality
+            val adminArea = addresses[0].adminArea.split(" ")
+            adminArea[0]
         } else {
             ""
         }
