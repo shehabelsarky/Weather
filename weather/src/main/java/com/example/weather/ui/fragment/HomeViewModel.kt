@@ -58,7 +58,7 @@ class HomeViewModel @ViewModelInject constructor(
                 onComplete {
                     viewModelScope.launch {
                         citiesChannel.offer(it)
-                        dropPopularPersons()
+                        dropCities()
                         it.map(::insertCity)
                     }
                 }
@@ -108,7 +108,7 @@ class HomeViewModel @ViewModelInject constructor(
         }
     }
 
-    private fun dropPopularPersons() {
+    private fun dropCities() {
         viewModelScope.launch {
             dropCitiesUseCase.execute(Unit) {
                 onComplete {
