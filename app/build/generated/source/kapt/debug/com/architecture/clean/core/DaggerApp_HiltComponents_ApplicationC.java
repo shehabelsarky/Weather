@@ -35,6 +35,7 @@ import com.examples.data.source.local.MockJson;
 import com.examples.domain.mappers.cities.CitiesMapper;
 import com.examples.domain.mappers.weather.WeatherMapper;
 import com.examples.domain.usecases.cities.CitiesUseCase;
+import com.examples.domain.usecases.cities.DropCitiesUseCase;
 import com.examples.domain.usecases.cities.InsertCityUseCase;
 import com.examples.domain.usecases.cities.SelectCitiesUseCase;
 import com.examples.domain.usecases.weather.WeatherUseCase;
@@ -300,6 +301,8 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
 
       private volatile Provider<SelectCitiesUseCase> selectCitiesUseCaseProvider;
 
+      private volatile Provider<DropCitiesUseCase> dropCitiesUseCaseProvider;
+
       private volatile Provider<HomeViewModel_AssistedFactory> homeViewModel_AssistedFactoryProvider;
 
       private ActivityCImpl(Activity activityParam) {
@@ -371,8 +374,21 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
         return (Provider<SelectCitiesUseCase>) local;
       }
 
+      private DropCitiesUseCase getDropCitiesUseCase() {
+        return new DropCitiesUseCase(DaggerApp_HiltComponents_ApplicationC.this.getAppRepoImp());
+      }
+
+      private Provider<DropCitiesUseCase> getDropCitiesUseCaseProvider() {
+        Object local = dropCitiesUseCaseProvider;
+        if (local == null) {
+          local = new SwitchingProvider<>(6);
+          dropCitiesUseCaseProvider = (Provider<DropCitiesUseCase>) local;
+        }
+        return (Provider<DropCitiesUseCase>) local;
+      }
+
       private HomeViewModel_AssistedFactory getHomeViewModel_AssistedFactory() {
-        return HomeViewModel_AssistedFactory_Factory.newInstance(getCitiesUseCaseProvider(), getWeatherUseCaseProvider(), getInsertCityUseCaseProvider(), getSelectCitiesUseCaseProvider());
+        return HomeViewModel_AssistedFactory_Factory.newInstance(getCitiesUseCaseProvider(), getWeatherUseCaseProvider(), getInsertCityUseCaseProvider(), getSelectCitiesUseCaseProvider(), getDropCitiesUseCaseProvider());
       }
 
       private Provider<HomeViewModel_AssistedFactory> getHomeViewModel_AssistedFactoryProvider() {
@@ -530,6 +546,9 @@ public final class DaggerApp_HiltComponents_ApplicationC extends App_HiltCompone
 
             case 5: // com.examples.domain.usecases.cities.SelectCitiesUseCase 
             return (T) ActivityCImpl.this.getSelectCitiesUseCase();
+
+            case 6: // com.examples.domain.usecases.cities.DropCitiesUseCase 
+            return (T) ActivityCImpl.this.getDropCitiesUseCase();
 
             default: throw new AssertionError(id);
           }

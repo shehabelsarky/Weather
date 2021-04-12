@@ -5,6 +5,7 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.viewModelScope
 import com.examples.core.base.view_model.BaseViewModel
 import com.examples.domain.usecases.cities.CitiesUseCase
+import com.examples.domain.usecases.cities.DropCitiesUseCase
 import com.examples.domain.usecases.cities.InsertCityUseCase
 import com.examples.domain.usecases.cities.SelectCitiesUseCase
 import com.examples.domain.usecases.weather.WeatherUseCase
@@ -24,7 +25,8 @@ class HomeViewModel @ViewModelInject constructor(
     private val citiesUseCase: CitiesUseCase,
     private val weatherUseCase: WeatherUseCase,
     private val insertCityUseCase: InsertCityUseCase,
-    private val selectCitiesUseCase: SelectCitiesUseCase
+    private val selectCitiesUseCase: SelectCitiesUseCase,
+    private val dropCitiesUseCase: DropCitiesUseCase
 ) : BaseViewModel() {
     private val TAG = HomeViewModel::class.simpleName
 
@@ -56,8 +58,9 @@ class HomeViewModel @ViewModelInject constructor(
                 onComplete {
                     viewModelScope.launch {
                         citiesChannel.offer(it)
+                        dropPopularPersons()
+                        it.map(::insertCity)
                     }
-                    it.map(::insertCity)
                 }
                 onError(::setErrorReason)
                 onCancel(::setCancellationReason)
@@ -97,6 +100,20 @@ class HomeViewModel @ViewModelInject constructor(
                     viewModelScope.launch {
                         citiesChannel.offer(it)
                     }
+                }
+                onCancel {
+                    Log.d(TAG, "Coroutine is cancelled")
+                }
+            }
+        }
+    }
+
+    private fun dropPopularPersons() {
+        viewModelScope.launch {
+            dropCitiesUseCase.execute(Unit) {
+                onComplete {
+                    Log.d(TAG, "cities table is nuked")
+                    // TODO() if you want to drop table then insert call insert method here
                 }
                 onCancel {
                     Log.d(TAG, "Coroutine is cancelled")

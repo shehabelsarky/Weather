@@ -14,4 +14,7 @@ interface CitiesDao {
 
     @Query("SELECT * from City ORDER BY id ASC")
     suspend fun selectAllCities(): MutableList<City>
+
+    @Query("DELETE FROM City")
+    suspend fun deleteCitiesTable()
 }

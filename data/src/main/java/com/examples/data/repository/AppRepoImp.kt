@@ -33,4 +33,8 @@ class AppRepoImp @Inject constructor(
     override suspend fun selectAllCities(): MutableList<City> {
         return citiesDatabase.citiesDao().selectAllCities()
     }
+
+    override suspend fun deleteCitiesTable() {
+        return citiesDatabase.citiesDao().deleteCitiesTable()
+    }
 }

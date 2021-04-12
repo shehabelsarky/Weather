@@ -17,4 +17,6 @@ interface AppRepository{
 
     suspend fun insertCity(city: City)
     suspend fun selectAllCities(): MutableList<City>
+    suspend fun deleteCitiesTable()
+
 }
